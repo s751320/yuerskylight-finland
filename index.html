@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Artificial Skylight Panel — Beat Kaamos | Xianggang Jiutongbida Trading</title>
+  <meta name="description" content="CE-certified artificial skylight panels that fight kaamos — Finland's winter darkness. Indoor daylight therapy for homes, offices, and wellness spaces."/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --sky: #4A90D9;
+      --sky-dark: #2C6EA6;
+      --gold: #F5C842;
+      --text: #1a1a2e;
+      --muted: #555;
+      --light-bg: #F7F9FC;
+      --border: #e0e8f0;
+      --white: #fff;
+      --radius: 12px;
+      --shadow: 0 4px 24px rgba(74,144,217,0.12);
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    /* NAV */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(255,255,255,0.96);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 40px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .nav-logo { font-weight: 700; font-size: 1rem; color: var(--sky-dark); letter-spacing: 0.02em; }
+    .nav-cta {
+      background: var(--sky); color: var(--white);
+      padding: 9px 22px; border-radius: 50px;
+      font-size: 0.9rem; font-weight: 600; text-decoration: none;
+      transition: background 0.2s;
+    }
+    .nav-cta:hover { background: var(--sky-dark); }
+
+    /* HERO */
+    .hero {
+      min-height: 92vh;
+      background: linear-gradient(135deg, #0d1b3e 0%, #1a3a6e 50%, #2c6ea6 100%);
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      text-align: center; padding: 80px 24px 60px;
+      position: relative; overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: url('https://sc02.alicdn.com/kf/A025e9eee0d8b4cd3abce23f9344df58ek.png') center/cover no-repeat;
+      opacity: 0.25;
+    }
+    .hero-content { position: relative; z-index: 2; max-width: 760px; }
+    .hero-badge {
+      display: inline-block;
+      background: rgba(245,200,66,0.2); border: 1px solid var(--gold);
+      color: var(--gold); font-size: 0.78rem; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      padding: 6px 16px; border-radius: 50px; margin-bottom: 24px;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.6rem);
+      font-weight: 800; color: var(--white);
+      line-height: 1.15; margin-bottom: 16px;
+      text-shadow: 0 2px 20px rgba(0,0,0,0.4);
+    }
+    .hero h1 em { color: var(--gold); font-style: normal; }
+    .hero p {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      color: rgba(255,255,255,0.85);
+      max-width: 580px; margin: 0 auto 36px;
+    }
+    .hero-actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+    .btn-primary {
+      background: var(--sky); color: var(--white);
+      padding: 14px 32px; border-radius: 50px;
+      font-size: 1rem; font-weight: 700; text-decoration: none;
+      box-shadow: 0 4px 20px rgba(74,144,217,0.5);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(74,144,217,0.6); }
+    .btn-secondary {
+      background: rgba(255,255,255,0.12); color: var(--white);
+      border: 1.5px solid rgba(255,255,255,0.4);
+      padding: 14px 32px; border-radius: 50px;
+      font-size: 1rem; font-weight: 600; text-decoration: none;
+      transition: background 0.2s;
+    }
+    .btn-secondary:hover { background: rgba(255,255,255,0.2); }
+
+    /* STATS BAR */
+    .stats-bar {
+      background: var(--sky-dark); color: var(--white);
+      display: flex; justify-content: center; flex-wrap: wrap; gap: 0;
+    }
+    .stat-item {
+      padding: 20px 40px; text-align: center;
+      border-right: 1px solid rgba(255,255,255,0.2);
+    }
+    .stat-item:last-child { border-right: none; }
+    .stat-num { font-size: 1.8rem; font-weight: 800; color: var(--gold); }
+    .stat-label { font-size: 0.78rem; opacity: 0.8; text-transform: uppercase; letter-spacing: 0.05em; }
+
+    /* SECTION */
+    section { padding: 80px 24px; }
+    .container { max-width: 1100px; margin: 0 auto; }
+    .section-label {
+      font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--sky); margin-bottom: 12px;
+    }
+    h2 {
+      font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+      font-weight: 800; line-height: 1.2; margin-bottom: 16px;
+    }
+    .subtitle { font-size: 1.05rem; color: var(--muted); max-width: 580px; margin-bottom: 48px; }
+
+    /* KAAMOS SECTION */
+    .kaamos { background: var(--light-bg); }
+    .kaamos-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center;
+    }
+    .kaamos-text h2 { color: var(--text); }
+    .kaamos-stat-row {
+      display: flex; gap: 24px; margin-top: 32px; flex-wrap: wrap;
+    }
+    .kaamos-stat {
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 20px 24px; flex: 1; min-width: 140px;
+      box-shadow: var(--shadow);
+    }
+    .kaamos-stat .num { font-size: 2rem; font-weight: 800; color: var(--sky); }
+    .kaamos-stat .desc { font-size: 0.82rem; color: var(--muted); margin-top: 4px; }
+    .kaamos-image {
+      border-radius: var(--radius); overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+    .kaamos-image img { width: 100%; display: block; border-radius: var(--radius); }
+
+    /* PRODUCT SECTION */
+    .product-showcase {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start;
+    }
+    .product-images {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+    }
+    .product-images img {
+      width: 100%; border-radius: 10px; object-fit: cover;
+      aspect-ratio: 1; box-shadow: var(--shadow);
+      transition: transform 0.2s;
+    }
+    .product-images img:first-child {
+      grid-column: span 2; aspect-ratio: 16/9;
+    }
+    .product-images img:hover { transform: scale(1.02); }
+    .spec-table { width: 100%; border-collapse: collapse; margin-top: 24px; }
+    .spec-table tr { border-bottom: 1px solid var(--border); }
+    .spec-table tr:last-child { border-bottom: none; }
+    .spec-table td { padding: 10px 0; font-size: 0.92rem; }
+    .spec-table td:first-child { color: var(--muted); width: 45%; }
+    .spec-table td:last-child { font-weight: 600; color: var(--text); }
+    .cert-badges {
+      display: flex; gap: 10px; flex-wrap: wrap; margin-top: 20px;
+    }
+    .cert-badge {
+      background: #e8f4ec; color: #2a7a4b;
+      border: 1px solid #b2dfcc; border-radius: 50px;
+      padding: 5px 14px; font-size: 0.8rem; font-weight: 700;
+    }
+
+    /* FEATURES */
+    .features-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+    }
+    .feature-card {
+      background: var(--light-bg); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 28px 24px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .feature-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+    .feature-icon { font-size: 2rem; margin-bottom: 14px; }
+    .feature-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 8px; }
+    .feature-card p { font-size: 0.88rem; color: var(--muted); }
+
+    /* USE CASES */
+    .usecases { background: var(--light-bg); }
+    .usecase-grid {
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;
+    }
+    .usecase-card {
+      background: var(--white); border-radius: var(--radius);
+      padding: 28px; border: 1px solid var(--border);
+      display: flex; gap: 16px; align-items: flex-start;
+    }
+    .usecase-icon { font-size: 2rem; flex-shrink: 0; }
+    .usecase-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 6px; }
+    .usecase-card p { font-size: 0.86rem; color: var(--muted); }
+
+    /* CTA */
+    .cta-section {
+      background: linear-gradient(135deg, #0d1b3e, #2c6ea6);
+      text-align: center; padding: 100px 24px;
+      position: relative; overflow: hidden;
+    }
+    .cta-section h2 { color: var(--white); margin-bottom: 16px; }
+    .cta-section p { color: rgba(255,255,255,0.8); max-width: 520px; margin: 0 auto 36px; font-size: 1.05rem; }
+    .contact-grid {
+      display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 24px;
+    }
+    .contact-item {
+      background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.25);
+      border-radius: var(--radius); padding: 16px 28px; color: var(--white);
+      font-size: 0.92rem; text-decoration: none;
+      transition: background 0.2s;
+    }
+    .contact-item:hover { background: rgba(255,255,255,0.22); }
+    .contact-item strong { display: block; font-size: 0.72rem; opacity: 0.7; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 4px; }
+
+    /* FOOTER */
+    footer {
+      background: #0d1b3e; color: rgba(255,255,255,0.5);
+      text-align: center; padding: 28px 24px; font-size: 0.82rem;
+    }
+    footer a { color: rgba(255,255,255,0.7); text-decoration: none; }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      nav { padding: 14px 20px; }
+      .kaamos-grid, .product-showcase, .features-grid { grid-template-columns: 1fr; }
+      .usecase-grid { grid-template-columns: 1fr; }
+      .stat-item { padding: 16px 20px; }
+      .product-images img:first-child { aspect-ratio: 4/3; }
+      .hero { min-height: 80vh; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <span class="nav-logo">Xianggang Jiutongbida Trading Co.</span>
+  <a href="mailto:jiuxinsun6@gmail.com" class="nav-cta">Request Catalogue →</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-badge">✦ Wellness Lighting for Nordic Markets</div>
+    <h1>Fight <em>kaamos</em> with<br>indoor daylight</h1>
+    <p>An artificial skylight panel that recreates the feeling of a real blue-sky day — inside your space, every day of the year.</p>
+    <div class="hero-actions">
+      <a href="mailto:jiuxinsun6@gmail.com?subject=Product Catalogue Request – Artificial Skylight" class="btn-primary">Request Catalogue & Pricing</a>
+      <a href="#product" class="btn-secondary">See Specifications ↓</a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stat-item">
+    <div class="stat-num">12%</div>
+    <div class="stat-label">of Finns affected by SAD</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">CRI&gt;90</div>
+    <div class="stat-label">Near-natural sunlight quality</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">CE</div>
+    <div class="stat-label">EU certified & compliant</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">2100K</div>
+    <div class="stat-label">to 7500K full daylight cycle</div>
+  </div>
+</div>
+
+<!-- KAAMOS SECTION -->
+<section class="kaamos">
+  <div class="container">
+    <div class="kaamos-grid">
+      <div class="kaamos-text">
+        <div class="section-label">The Problem</div>
+        <h2>Finland's winters are beautiful — and brutal</h2>
+        <p style="color: var(--muted); margin-top: 12px;">Kaamos, the polar night, brings weeks of near-total darkness. For over a third of Finns, this means seasonal depression, disrupted sleep, and chronic fatigue.</p>
+        <p style="color: var(--muted); margin-top: 12px;">Light therapy is the clinically proven solution. Our artificial skylight brings it directly into the architecture of a space — no lamp to switch on, no routine to remember. Just natural light, overhead, all day.</p>
+        <div class="kaamos-stat-row">
+          <div class="kaamos-stat">
+            <div class="num">27%</div>
+            <div class="desc">experience seasonal symptoms</div>
+          </div>
+          <div class="kaamos-stat">
+            <div class="num">5h</div>
+            <div class="desc">daylight in Helsinki mid-winter</div>
+          </div>
+          <div class="kaamos-stat">
+            <div class="num">~0</div>
+            <div class="desc">hours in northern Lapland</div>
+          </div>
+        </div>
+      </div>
+      <div class="kaamos-image">
+        <img src="https://www.yuerlight.com/catalog/2026/PX/description/1.jpg" alt="Artificial skylight installed in a room" loading="lazy" onerror="this.src='https://sc02.alicdn.com/kf/A025e9eee0d8b4cd3abce23f9344df58ek.png'"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCT SECTION -->
+<section id="product">
+  <div class="container">
+    <div class="section-label">The Product</div>
+    <h2>Not a decorative lamp.<br>A light therapy solution.</h2>
+    <div class="product-showcase" style="margin-top: 48px;">
+      <div class="product-images">
+        <img src="https://www.yuerlight.com/catalog/2026/PX/description/2.jpg" alt="Skylight panel installed in ceiling" loading="lazy" onerror="this.src='https://sc01.alicdn.com/kf/Acb6c0c08f5c94c13b8db200d4017ed1eI.png'"/>
+        <img src="https://www.yuerlight.com/catalog/2026/PX/description/3.jpg" alt="Blue sky effect detail" loading="lazy" onerror="this.src='https://sc01.alicdn.com/kf/Acb6c0c08f5c94c13b8db200d4017ed1eI.png'"/>
+        <img src="https://www.yuerlight.com/catalog/2026/PX/description/4.jpg" alt="Product installation" loading="lazy" onerror="this.src='https://sc01.alicdn.com/kf/Acb6c0c08f5c94c13b8db200d4017ed1eI.png'"/>
+      </div>
+      <div class="product-info">
+        <h3 style="font-size: 1.4rem; margin-bottom: 8px;">Artificial Skylight Panel</h3>
+        <p style="color: var(--muted); margin-bottom: 20px;">CE & RoHS certified · B2B wholesale pricing available</p>
+        <div class="cert-badges">
+          <span class="cert-badge">✓ CE Certified</span>
+          <span class="cert-badge">✓ RoHS Compliant</span>
+          <span class="cert-badge">✓ EU Ready</span>
+          <span class="cert-badge">✓ IP20</span>
+        </div>
+        <table class="spec-table">
+          <tr><td>CCT Range</td><td>2100K – 7500K</td></tr>
+          <tr><td>CRI (Color Rendering)</td><td>&gt; 90</td></tr>
+          <tr><td>Working Life</td><td>&gt; 15,000 hours</td></tr>
+          <tr><td>Input Voltage</td><td>100–240V (EU compatible)</td></tr>
+          <tr><td>Power Factor</td><td>&gt; 0.98</td></tr>
+          <tr><td>Efficiency</td><td>&gt; 60 lm/W</td></tr>
+          <tr><td>SDCM (Colour Accuracy)</td><td>&lt; 5</td></tr>
+          <tr><td>Control Systems</td><td>Tuya WiFi / BLE / DALI / 0-10V</td></tr>
+          <tr><td>Material</td><td>Aluminium alloy + PMMA</td></tr>
+          <tr><td>MOQ</td><td>2 units</td></tr>
+        </table>
+        <div style="margin-top: 28px;">
+          <a href="mailto:jiuxinsun6@gmail.com?subject=Pricing Enquiry – Artificial Skylight Panel" class="btn-primary" style="display: inline-block; font-size: 0.95rem;">Request Pricing & CE Docs →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section style="background: var(--light-bg);">
+  <div class="container">
+    <div class="section-label">Why This Product</div>
+    <h2>Built for Nordic wellbeing</h2>
+    <p class="subtitle">Designed for spaces where natural light is a luxury — and a health necessity.</p>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">☀️</div>
+        <h3>Full Daylight Cycle</h3>
+        <p>Shifts from warm sunrise (2100K) to bright noon (7500K) — supporting natural circadian rhythm throughout the day.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🎨</div>
+        <h3>CRI &gt; 90 — Near-Sunlight Quality</h3>
+        <p>High colour rendering index ensures light feels natural and clinical, not harsh or artificial.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🏗️</div>
+        <h3>Architectural Integration</h3>
+        <p>Flush-ceiling installation. No lamp shade, no cord. Light therapy becomes part of the space design.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📱</div>
+        <h3>Smart Control Ready</h3>
+        <p>Compatible with Tuya WiFi, BLE, DALI, and 0-10V systems. Integrates with any smart building setup.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🇪🇺</div>
+        <h3>CE & RoHS Certified</h3>
+        <p>Fully compliant with EU electrical and environmental standards. Documentation available on request.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">⚡</div>
+        <h3>230V Compatible</h3>
+        <p>Wide voltage range (100–240V) is fully compatible with Finnish and EU standard electrical systems.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- USE CASES -->
+<section class="usecases">
+  <div class="container">
+    <div class="section-label">Who It's For</div>
+    <h2>The right fit for Finnish B2B</h2>
+    <p class="subtitle">We supply interior designers, architects, lighting companies, wellness centres, and renovation contractors across Finland.</p>
+    <div class="usecase-grid">
+      <div class="usecase-card">
+        <div class="usecase-icon">🏠</div>
+        <div>
+          <h3>Residential & High-End Homes</h3>
+          <p>A premium wellness feature for renovations and new builds. Replaces skylight windows at a fraction of the cost.</p>
+        </div>
+      </div>
+      <div class="usecase-card">
+        <div class="usecase-icon">🏢</div>
+        <div>
+          <h3>Offices & Workplaces</h3>
+          <p>Finnish workplace guidelines increasingly recommend bright light therapy during kaamos. Compliant, aesthetic, and effective.</p>
+        </div>
+      </div>
+      <div class="usecase-card">
+        <div class="usecase-icon">🧘</div>
+        <div>
+          <h3>Wellness & Spa Centres</h3>
+          <p>Create immersive environments for light therapy treatment rooms, relaxation spaces, and yoga studios.</p>
+        </div>
+      </div>
+      <div class="usecase-card">
+        <div class="usecase-icon">🏨</div>
+        <div>
+          <h3>Hotels & Hospitality</h3>
+          <p>A standout feature for Nordic hotels marketing to guests seeking a restorative, light-positive stay.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TWO FORMS SECTION -->
+<section style="background: var(--light-bg);">
+  <div class="container">
+    <div class="section-label">Installation Options</div>
+    <h2>Two forms, one solution</h2>
+    <p class="subtitle">The same daylight technology adapts to any architectural context — whether you're working with walls or ceilings.</p>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 40px;">
+
+      <!-- Window form -->
+      <div style="background: var(--white); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); border: 1px solid var(--border);">
+        <div style="position: relative;">
+          <img src="https://www.yuerlight.com/catalog/2026/PX/description/5.jpg" alt="Artificial window skylight — wall-mounted form showing two window panels in a real interior" style="width:100%; aspect-ratio:4/3; object-fit:cover; display:block;"/>
+          <div style="position:absolute; top:16px; left:16px; background:var(--sky); color:#fff; font-size:0.72rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; padding:5px 12px; border-radius:50px;">Window Form</div>
+        </div>
+        <div style="padding: 24px;">
+          <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 8px;">False Window Panel</h3>
+          <p style="font-size: 0.88rem; color: var(--muted); margin-bottom: 16px;">Installed in a wall recess or frame to simulate a real window looking out to a blue sky. Ideal for interior rooms with no external walls or windowless offices.</p>
+          <ul style="font-size: 0.85rem; color: var(--muted); padding-left: 18px; line-height: 2;">
+            <li>Basements & interior rooms</li>
+            <li>Windowless offices & meeting rooms</li>
+            <li>Retail spaces & corridors</li>
+            <li>Healthcare waiting areas</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Skylight form -->
+      <div style="background: var(--white); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); border: 1px solid var(--border);">
+        <div style="position: relative;">
+          <img src="https://sc01.alicdn.com/kf/A2680a9e73b9f4c18801eada25ce61912I.png" alt="Artificial skylight — ceiling-mounted form, real installation with 6 panels" style="width:100%; aspect-ratio:4/3; object-fit:cover; display:block;"/>
+          <div style="position:absolute; top:16px; left:16px; background: #2a7a4b; color:#fff; font-size:0.72rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; padding:5px 12px; border-radius:50px;">Skylight Form</div>
+        </div>
+        <div style="padding: 24px;">
+          <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 8px;">Ceiling Skylight Panel</h3>
+          <p style="font-size: 0.88rem; color: var(--muted); margin-bottom: 16px;">Flush-mounted into the ceiling to simulate a real skylight overhead. Creates the immersive sensation of an open sky directly above — the most powerful light therapy effect.</p>
+          <ul style="font-size: 0.85rem; color: var(--muted); padding-left: 18px; line-height: 2;">
+            <li>Living rooms & dining areas</li>
+            <li>Wellness & spa treatment rooms</li>
+            <li>Hotel lobbies & premium suites</li>
+            <li>Yoga studios & meditation spaces</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    <p style="text-align:center; margin-top: 32px; font-size: 0.9rem; color: var(--muted);">Both forms use identical panels — your installer simply chooses the mounting orientation. <a href="mailto:jiuxinsun6@gmail.com?subject=Installation Question – Skylight Panel" style="color: var(--sky); font-weight:600;">Ask us for installation guidance →</a></p>
+  </div>
+</section>
+
+<!-- MORE PRODUCT IMAGES -->
+<section>
+  <div class="container">
+    <div class="section-label">Project Impressions</div>
+    <h2>How it looks installed</h2>
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 36px;">
+      <img src="https://sc01.alicdn.com/kf/Acb6c0c08f5c94c13b8db200d4017ed1eI.png" alt="Ceiling skylight installation — real project" style="width:100%; border-radius: var(--radius); aspect-ratio:4/3; object-fit:cover; box-shadow: var(--shadow);" loading="lazy"/>
+      <img src="https://www.yuerlight.com/catalog/2026/PX/description/3.jpg" alt="Artificial window skylight close-up with model" style="width:100%; border-radius: var(--radius); aspect-ratio:4/3; object-fit:cover; box-shadow: var(--shadow);" loading="lazy"/>
+      <img src="https://sc02.alicdn.com/kf/A025e9eee0d8b4cd3abce23f9344df58ek.png" alt="Nordic interior atmosphere" style="width:100%; border-radius: var(--radius); aspect-ratio:4/3; object-fit:cover; box-shadow: var(--shadow);" loading="lazy"/>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <div class="section-label" style="color: var(--gold);">Get In Touch</div>
+    <h2>Ready to bring daylight<br>to your projects?</h2>
+    <p>We supply B2B partners across Finland with wholesale pricing, CE documentation, and product samples. No minimum commitment to start a conversation.</p>
+    <div class="contact-grid">
+      <a href="mailto:jiuxinsun6@gmail.com?subject=Skylight Enquiry" class="contact-item">
+        <strong>Email</strong>
+        jiuxinsun6@gmail.com
+      </a>
+      <a href="mailto:jiuxinsun6@gmail.com?subject=Catalogue Request – Artificial Skylight" class="contact-item">
+        <strong>Request</strong>
+        Product Catalogue & CE Docs
+      </a>
+      <a href="mailto:jiuxinsun6@gmail.com?subject=Sample Request – Artificial Skylight" class="contact-item">
+        <strong>Order</strong>
+        Product Sample (MOQ: 2 units)
+      </a>
+    </div>
+    <p style="color: rgba(255,255,255,0.55); font-size: 0.82rem; margin-top: 12px;">Response within 24 hours · CE & RoHS documentation provided · Shipping to Finland available</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Xianggang Jiutongbida Trading Co. · <a href="mailto:jiuxinsun6@gmail.com">jiuxinsun6@gmail.com</a></p>
+  <p style="margin-top: 6px; font-size: 0.75rem;">Supplying CE-certified wellness lighting to Finnish and Nordic B2B partners.</p>
+</footer>
+
+</body>
+</html>
