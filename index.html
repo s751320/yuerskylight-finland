@@ -505,21 +505,36 @@
     <div class="section-label" style="color: var(--gold);">Get In Touch</div>
     <h2>Ready to bring daylight<br>to your projects?</h2>
     <p>We supply B2B partners across Finland with wholesale pricing, CE documentation, and product samples. No minimum commitment to start a conversation.</p>
-    <div class="contact-grid">
-      <a href="mailto:jiuxinsun6@gmail.com?subject=Skylight Enquiry" class="contact-item">
-        <strong>Email</strong>
-        jiuxinsun6@gmail.com
-      </a>
-      <a href="mailto:jiuxinsun6@gmail.com?subject=Catalogue Request – Artificial Skylight" class="contact-item">
-        <strong>Request</strong>
-        Product Catalogue & CE Docs
-      </a>
-      <a href="mailto:jiuxinsun6@gmail.com?subject=Sample Request – Artificial Skylight" class="contact-item">
-        <strong>Order</strong>
-        Product Sample (MOQ: 2 units)
-      </a>
-    </div>
-    <p style="color: rgba(255,255,255,0.55); font-size: 0.82rem; margin-top: 12px;">Response within 24 hours · CE & RoHS documentation provided · Shipping to Finland available</p>
+    <!-- Contact Form -->
+    <form action="https://formspree.io/f/mlgonzaz" method="POST" style="max-width: 540px; margin: 0 auto 32px; display: flex; flex-direction: column; gap: 14px;">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+        <input type="text" name="name" placeholder="Your name" required
+          style="padding: 14px 18px; border-radius: 10px; border: none; font-size: 0.95rem; background: rgba(255,255,255,0.12); color: #fff; outline: none;"
+          onfocus="this.style.background='rgba(255,255,255,0.2)'" onblur="this.style.background='rgba(255,255,255,0.12)'"/>
+        <input type="email" name="email" placeholder="Work email" required
+          style="padding: 14px 18px; border-radius: 10px; border: none; font-size: 0.95rem; background: rgba(255,255,255,0.12); color: #fff; outline: none;"
+          onfocus="this.style.background='rgba(255,255,255,0.2)'" onblur="this.style.background='rgba(255,255,255,0.12)'"/>
+      </div>
+      <input type="text" name="company" placeholder="Company name"
+        style="padding: 14px 18px; border-radius: 10px; border: none; font-size: 0.95rem; background: rgba(255,255,255,0.12); color: #fff; outline: none;"
+        onfocus="this.style.background='rgba(255,255,255,0.2)'" onblur="this.style.background='rgba(255,255,255,0.12)'"/>
+      <select name="interest" style="padding: 14px 18px; border-radius: 10px; border: none; font-size: 0.95rem; background: rgba(255,255,255,0.12); color: rgba(255,255,255,0.75); outline: none; cursor: pointer;">
+        <option value="" disabled selected>What are you interested in?</option>
+        <option value="catalogue">Product catalogue & pricing</option>
+        <option value="sample">Order a sample</option>
+        <option value="ce_docs">CE & RoHS documentation</option>
+        <option value="project">Discuss a specific project</option>
+      </select>
+      <textarea name="message" placeholder="Tell us about your project or ask a question (optional)" rows="3"
+        style="padding: 14px 18px; border-radius: 10px; border: none; font-size: 0.95rem; background: rgba(255,255,255,0.12); color: #fff; outline: none; resize: vertical; font-family: inherit;"
+        onfocus="this.style.background='rgba(255,255,255,0.2)'" onblur="this.style.background='rgba(255,255,255,0.12)'"></textarea>
+      <button type="submit"
+        style="padding: 16px; border-radius: 50px; border: none; background: var(--gold); color: #1a1a2e; font-size: 1rem; font-weight: 700; cursor: pointer; transition: opacity 0.2s;"
+        onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">
+        Send Enquiry →
+      </button>
+    </form>
+    <p style="color: rgba(255,255,255,0.55); font-size: 0.82rem; margin-top: 4px;">Response within 24 hours · CE & RoHS documentation provided · Shipping to Finland available</p>
   </div>
 </section>
 
