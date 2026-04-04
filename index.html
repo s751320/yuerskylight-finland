@@ -427,6 +427,9 @@
       nav { padding: 14px 20px; }
       .nav-logo { font-size: 1rem; }
       .kaamos-grid, .product-showcase, .features-grid, .science-grid { grid-template-columns: 1fr; }
+      #about > .container > div[style*="grid-template-columns: 1fr 1fr"] { grid-template-columns: 1fr !important; }
+      #why-us > .container > div[style*="grid-template-columns: repeat(3"] { grid-template-columns: 1fr !important; }
+      .nav-links { display: none; }
       .benefits-grid { grid-template-columns: repeat(2, 1fr); }
       .testimonials-grid { grid-template-columns: 1fr; }
       .usecase-grid { grid-template-columns: 1fr; }
@@ -473,6 +476,13 @@
       </div>
     </li>
     <li><a href="#science">Science</a></li>
+    <li>
+      <a href="#about">About ▾</a>
+      <div class="nav-dropdown">
+        <a href="#about">Company Profile</a>
+        <a href="#why-us">Why Choose YUERSky</a>
+      </div>
+    </li>
     <li><a href="#faq">FAQ</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
@@ -1033,6 +1043,146 @@
       <img src="https://sc02.alicdn.com/kf/A9bbe9ae27f5f41cc87682960c7415a9fv.png" alt="Office with artificial skylight ceiling panels — Nordic design" style="width:100%; border-radius: var(--radius); aspect-ratio:4/3; object-fit:cover; box-shadow: var(--shadow);" loading="lazy"/>
       <img src="https://sc02.alicdn.com/kf/A026e37e303d24fa4884d1544f74ad822W.png" alt="Four blue sky ceiling panels — upward view" style="width:100%; border-radius: var(--radius); aspect-ratio:4/3; object-fit:cover; box-shadow: var(--shadow);" loading="lazy"/>
       <img src="https://sc02.alicdn.com/kf/A23131fb7a7d144c0a4f10289a9a4ad943.png" alt="Hotel lobby with large artificial skylight panel" style="width:100%; border-radius: var(--radius); aspect-ratio:4/3; object-fit:cover; box-shadow: var(--shadow);" loading="lazy"/>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT US -->
+<section style="background: var(--light-bg);" id="about">
+  <div class="container">
+    <div class="section-label">About YUERSky</div>
+    <h2>Who we are</h2>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; margin-top: 48px;">
+      <div>
+        <p style="font-size: 1.05rem; color: var(--muted); line-height: 1.8; margin-bottom: 20px;">
+          YUERSky is a specialist supplier of CE-certified artificial skylight LED panels for the Nordic B2B market. We source directly from verified manufacturers with full EU compliance documentation, and supply interior designers, architects, lighting consultants, wellness centres, and hospitality businesses across Finland and Scandinavia.
+        </p>
+        <p style="font-size: 1.05rem; color: var(--muted); line-height: 1.8; margin-bottom: 20px;">
+          Our focus is simple: bringing the health and wellbeing benefits of natural daylight into spaces where it would otherwise be impossible. In Finland, where kaamos — the polar night — affects the wellbeing of millions every winter, we believe architectural daylight is not a luxury. It is a necessity.
+        </p>
+        <p style="font-size: 1.05rem; color: var(--muted); line-height: 1.8;">
+          We work exclusively B2B, supporting design professionals with product specifications, CE documentation, sample orders, and project pricing. Every enquiry is handled personally and promptly.
+        </p>
+        <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 32px;">
+          <div style="background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px 24px; text-align: center; min-width: 120px;">
+            <div style="font-size: 1.6rem; font-weight: 800; color: var(--sky);">5</div>
+            <div style="font-size: 0.78rem; color: var(--muted); margin-top: 4px;">Panel sizes available</div>
+          </div>
+          <div style="background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px 24px; text-align: center; min-width: 120px;">
+            <div style="font-size: 1.6rem; font-weight: 800; color: var(--sky);">CE</div>
+            <div style="font-size: 0.78rem; color: var(--muted); margin-top: 4px;">EU certified, docs on request</div>
+          </div>
+          <div style="background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px 24px; text-align: center; min-width: 120px;">
+            <div style="font-size: 1.6rem; font-weight: 800; color: var(--sky);">24h</div>
+            <div style="font-size: 0.78rem; color: var(--muted); margin-top: 4px;">Response time to all enquiries</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img src="https://sc02.alicdn.com/kf/A9bbe9ae27f5f41cc87682960c7415a9fv.png"
+          alt="YUERSky artificial skylight installed in Nordic office"
+          style="width: 100%; border-radius: var(--radius); box-shadow: var(--shadow);" loading="lazy"/>
+        <p style="font-size: 0.78rem; color: var(--muted); margin-top: 10px; text-align: center;">
+          Artificial skylight panels installed in a Nordic office environment
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section style="background: var(--white);" id="why-us">
+  <div class="container">
+    <div class="section-label">Why Choose YUERSky</div>
+    <h2>What makes us different</h2>
+    <p class="subtitle">We are not a general lighting distributor. We specialise exclusively in artificial skylight panels — and that focus shows in everything we do.</p>
+
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 48px;">
+
+      <div style="background: var(--light-bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px 24px;">
+        <div style="font-size: 2rem; margin-bottom: 14px;">🏅</div>
+        <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 10px;">Full EU Compliance</h3>
+        <p style="font-size: 0.87rem; color: var(--muted); line-height: 1.6;">CE and RoHS certificates are available before you order — not after. We understand that Finnish procurement requires documentation upfront. No surprises.</p>
+      </div>
+
+      <div style="background: var(--light-bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px 24px;">
+        <div style="font-size: 2rem; margin-bottom: 14px;">🎯</div>
+        <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 10px;">Nordic Market Focus</h3>
+        <p style="font-size: 0.87rem; color: var(--muted); line-height: 1.6;">We supply exclusively to Finland and Scandinavia. Our products are specified for 230V systems, kaamos seasons, and the wellbeing standards expected by Finnish clients and specifiers.</p>
+      </div>
+
+      <div style="background: var(--light-bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px 24px;">
+        <div style="font-size: 2rem; margin-bottom: 14px;">📐</div>
+        <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 10px;">B2B Project Support</h3>
+        <p style="font-size: 0.87rem; color: var(--muted); line-height: 1.6;">We work directly with designers and architects on project specifications — providing tech data sheets, installation guidance, custom sizing options, and project volume pricing.</p>
+      </div>
+
+      <div style="background: var(--light-bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px 24px;">
+        <div style="font-size: 2rem; margin-bottom: 14px;">⚡</div>
+        <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 10px;">Fast Shipping to Finland</h3>
+        <p style="font-size: 0.87rem; color: var(--muted); line-height: 1.6;">Sample units ship in 7 days. Project quantities in 10–15 days via DHL/FedEx express direct to your site or studio. No slow sea freight, no long waits.</p>
+      </div>
+
+      <div style="background: var(--light-bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px 24px;">
+        <div style="font-size: 2rem; margin-bottom: 14px;">🔬</div>
+        <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 10px;">Smart System Integration</h3>
+        <p style="font-size: 0.87rem; color: var(--muted); line-height: 1.6;">DALI, 0-10V, Tuya WiFi, BLE — our panels integrate with the control systems already specified in your projects. No proprietary lock-in, no new infrastructure required.</p>
+      </div>
+
+      <div style="background: var(--light-bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px 24px;">
+        <div style="font-size: 2rem; margin-bottom: 14px;">🤝</div>
+        <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 10px;">Personal Service</h3>
+        <p style="font-size: 0.87rem; color: var(--muted); line-height: 1.6;">Every enquiry is handled personally, with a 24-hour response guarantee. No call centres. No automated replies. You deal directly with the person who knows the product.</p>
+      </div>
+
+    </div>
+
+    <!-- Comparison table -->
+    <div style="margin-top: 56px;">
+      <h3 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 24px; text-align: center;">YUERSky vs. a real skylight window</h3>
+      <div style="overflow-x: auto;">
+        <table style="width: 100%; border-collapse: collapse; font-size: 0.88rem;">
+          <thead>
+            <tr style="background: var(--sky-dark); color: #fff;">
+              <th style="padding: 14px 18px; text-align: left; border-radius: 8px 0 0 0;">Feature</th>
+              <th style="padding: 14px 18px; text-align: center;">YUERSky Panel</th>
+              <th style="padding: 14px 18px; text-align: center; border-radius: 0 8px 0 0;">Real Skylight Window</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom: 1px solid var(--border);">
+              <td style="padding: 12px 18px; font-weight: 600;">Installation complexity</td>
+              <td style="padding: 12px 18px; text-align: center; color: #2a7a4b; font-weight: 700;">✓ Simple ceiling mount</td>
+              <td style="padding: 12px 18px; text-align: center; color: #c0392b;">✗ Major structural work</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border); background: var(--light-bg);">
+              <td style="padding: 12px 18px; font-weight: 600;">Works in any room / floor</td>
+              <td style="padding: 12px 18px; text-align: center; color: #2a7a4b; font-weight: 700;">✓ Any room, any storey</td>
+              <td style="padding: 12px 18px; text-align: center; color: #c0392b;">✗ Top floor only</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border);">
+              <td style="padding: 12px 18px; font-weight: 600;">Kaamos performance</td>
+              <td style="padding: 12px 18px; text-align: center; color: #2a7a4b; font-weight: 700;">✓ Full brightness year-round</td>
+              <td style="padding: 12px 18px; text-align: center; color: #c0392b;">✗ Dark & grey all winter</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border); background: var(--light-bg);">
+              <td style="padding: 12px 18px; font-weight: 600;">Heat gain / cold loss</td>
+              <td style="padding: 12px 18px; text-align: center; color: #2a7a4b; font-weight: 700;">✓ None — insulated ceiling</td>
+              <td style="padding: 12px 18px; text-align: center; color: #c0392b;">✗ Significant heat loss</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border);">
+              <td style="padding: 12px 18px; font-weight: 600;">Circadian rhythm control</td>
+              <td style="padding: 12px 18px; text-align: center; color: #2a7a4b; font-weight: 700;">✓ Programmable 2700–6500K</td>
+              <td style="padding: 12px 18px; text-align: center; color: #c0392b;">✗ Uncontrolled</td>
+            </tr>
+            <tr style="background: var(--light-bg);">
+              <td style="padding: 12px 18px; font-weight: 600;">Cost</td>
+              <td style="padding: 12px 18px; text-align: center; color: #2a7a4b; font-weight: 700;">✓ From €300 per panel</td>
+              <td style="padding: 12px 18px; text-align: center; color: #c0392b;">✗ €5,000–€20,000+ installed</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
 </section>
