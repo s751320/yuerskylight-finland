@@ -1,9 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://yuerskylight.fi/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://yuerskylight.fi/products.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://yuerskylight.fi/applications.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://yuerskylight.fi/science.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://yuerskylight.fi/about.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://yuerskylight.fi/contact.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- English pages -->
+  <url>
+    <loc>https://yuerskylight.fi/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yuerskylight.fi/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://yuerskylight.fi/fi/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://yuerskylight.fi/sv/"/>
+    <changefreq>weekly</changefreq><priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://yuerskylight.fi/products.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yuerskylight.fi/products.html"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://yuerskylight.fi/fi/products.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://yuerskylight.fi/sv/products.html"/>
+    <changefreq>weekly</changefreq><priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://yuerskylight.fi/applications.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yuerskylight.fi/applications.html"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://yuerskylight.fi/fi/applications.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://yuerskylight.fi/sv/applications.html"/>
+    <changefreq>weekly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://yuerskylight.fi/science.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yuerskylight.fi/science.html"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://yuerskylight.fi/fi/science.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://yuerskylight.fi/sv/science.html"/>
+    <changefreq>monthly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://yuerskylight.fi/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yuerskylight.fi/about.html"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://yuerskylight.fi/fi/about.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://yuerskylight.fi/sv/about.html"/>
+    <changefreq>monthly</changefreq><priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yuerskylight.fi/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yuerskylight.fi/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://yuerskylight.fi/fi/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://yuerskylight.fi/sv/contact.html"/>
+    <changefreq>monthly</changefreq><priority>0.7</priority>
+  </url>
+
+  <!-- Finnish pages -->
+  <url><loc>https://yuerskylight.fi/fi/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://yuerskylight.fi/fi/products.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yuerskylight.fi/fi/applications.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yuerskylight.fi/fi/science.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://yuerskylight.fi/fi/about.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://yuerskylight.fi/fi/contact.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
+  <!-- Swedish pages -->
+  <url><loc>https://yuerskylight.fi/sv/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://yuerskylight.fi/sv/products.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yuerskylight.fi/sv/applications.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yuerskylight.fi/sv/science.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://yuerskylight.fi/sv/about.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://yuerskylight.fi/sv/contact.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
 </urlset>
