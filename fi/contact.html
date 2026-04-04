@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yhteystiedot ja FAQ — YUERSky keinotekoinen taivasvalo Suomi</title>
+  <meta name="description" content="Ota yhteyttä YUERSkyyn keinotekoisten taivasvalojen hinnoittelusta, CE-dokumentaatiosta ja B2B-projektiyhteistyöstä Suomessa. Vastaus 24 tunnin kuluessa. UKK: asennus, takuu, DALI ja toimitus."/>
+  <meta name="keywords" content="keinotekoinen taivasvalo Suomi yhteystiedot, osta LED taivasvalo paneeli, taivasvalo hintatiedustelu, CE-sertifikaatti LED taivasvalo, DALI taivasvalopaneeli tiedustelu Nordic"/>
+  <link rel="alternate" hreflang="fi" href="https://yuerskylight.fi/fi/contact.html"/>
+  <link rel="alternate" hreflang="en" href="https://yuerskylight.fi/contact.html"/>
+  <link rel="alternate" hreflang="sv" href="https://yuerskylight.fi/sv/contact.html"/>
+  <link rel="alternate" hreflang="x-default" href="https://yuerskylight.fi/contact.html"/>
+  <link rel="canonical" href="https://yuerskylight.fi/fi/contact.html"/>
+  <meta property="og:title" content="Yhteystiedot ja FAQ — YUERSky keinotekoinen taivasvalo Suomi"/>
+  <meta property="og:description" content="B2B-tiedustelut keinotekoisista taivasvalopaneeleista Suomessa. CE-dokumentit, projektihinnoittelu, DALI-tiedot. Vastaus 24 tunnin kuluessa."/>
+  <meta property="og:url" content="https://yuerskylight.fi/fi/contact.html"/>
+  <meta property="og:image" content="https://sc02.alicdn.com/kf/A37a4a23e552c4574aacbc18a96042d0cK.png"/>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type":"Question","name":"Miten keinotekoinen taivasvalopaneeli asennetaan?","acceptedAnswer":{"@type":"Answer","text":"Paneeli sopii standardiin kattoristikkoon (upotettu asennus) tai se voidaan asentaa pintaan. Sähköliitäntä on 100–240V AC. Rakenteellisia töitä ei tarvita tavallisen sähköasennuksen lisäksi."}},
+      {"@type":"Question","name":"Onko YUERSky-paneeleilla CE-sertifikaatti?","acceptedAnswer":{"@type":"Answer","text":"Kyllä. Jokainen paneeli toimitetaan CE-vaatimustenmukaisuusvakuutuksella ja RoHS-sertifikaatilla. Dokumentit ovat saatavilla pyynnöstä."}},
+      {"@type":"Question","name":"Kuinka kauan toimitus Suomeen kestää?","acceptedAnswer":{"@type":"Answer","text":"1–2 yksikköä: noin 7 päivää. Suuret tilaukset: 10–15 päivää. Toimitukset Suomeen, Ruotsiin, Norjaan ja Tanskaan."}},
+      {"@type":"Question","name":"Mikä on takuu?","acceptedAnswer":{"@type":"Answer","text":"3 vuoden valmistajan takuu. Paneelin käyttöikä on 50 000 tuntia (~25 vuotta 6 tunnin päivittäisellä käytöllä)."}}
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="../shared.css"/>
+  <style>
+    .contact-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 60px; align-items: start; margin-top: 48px; }
+    .contact-form label { display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 6px; }
+    .contact-form input, .contact-form textarea, .contact-form select {
+      width: 100%; padding: 11px 14px; border: 1.5px solid var(--border); border-radius: 8px;
+      font-size: 0.9rem; font-family: inherit; background: var(--white);
+      color: var(--text); margin-bottom: 18px; transition: border-color 0.2s;
+    }
+    .contact-form input:focus, .contact-form textarea:focus, .contact-form select:focus {
+      outline: none; border-color: var(--sky);
+    }
+    .contact-form textarea { height: 120px; resize: vertical; }
+    .contact-form button {
+      width: 100%; padding: 14px; background: var(--sky); color: var(--white);
+      border: none; border-radius: 50px; font-size: 1rem; font-weight: 700;
+      cursor: pointer; transition: background 0.2s;
+    }
+    .contact-form button:hover { background: var(--sky-dark); }
+    .contact-info-card { background: var(--light-bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 32px; }
+    .contact-info-card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 20px; }
+    .contact-info-item { display: flex; gap: 14px; align-items: flex-start; margin-bottom: 20px; }
+    .contact-info-item .icon { font-size: 1.4rem; flex-shrink: 0; margin-top: 2px; }
+    .contact-info-item p { font-size: 0.88rem; color: var(--muted); line-height: 1.6; }
+    .contact-info-item strong { display: block; font-weight: 700; color: var(--text); margin-bottom: 3px; }
+    .faq-item { border-bottom: 1px solid var(--border); }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-question {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 20px 0; cursor: pointer; font-weight: 600; font-size: 0.95rem;
+      transition: color 0.2s; gap: 16px;
+    }
+    .faq-question:hover { color: var(--sky); }
+    .faq-question .faq-arrow { font-size: 1.2rem; transition: transform 0.2s; flex-shrink: 0; }
+    .faq-answer { padding-bottom: 20px; font-size: 0.88rem; color: var(--muted); line-height: 1.75; display: none; }
+    .faq-item.open .faq-answer { display: block; }
+    .faq-item.open .faq-arrow { transform: rotate(180deg); }
+    .lang-switcher{display:flex;gap:6px;align-items:center;font-size:0.8rem}
+    .lang-switcher a{padding:4px 10px;border-radius:50px;text-decoration:none;font-weight:600;border:1.5px solid #e0e8f0;color:#555;transition:all 0.2s}
+    .lang-switcher a.active{background:#4A90D9;color:#fff;border-color:#4A90D9}
+    @media (max-width: 768px) {
+      .contact-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="top-bar">
+  <span>📧 <a href="mailto:jiuxin@yuerskylight.fi">jiuxin@yuerskylight.fi</a></span>
+  <span>⏰ Ma–Pe 09:00–17:00 Helsinki</span>
+  <span>🚚 Toimitukset Pohjoismaihin 7–15 päivässä</span>
+</div>
+
+<nav>
+  <a href="/fi/index.html" class="nav-logo">YUER<span>Sky</span></a>
+  <ul class="nav-links">
+    <li><a>Tuotteet ▾</a>
+      <div class="nav-dropdown">
+        <a href="/fi/products.html">Taivasvalopaneelit kattoon</a>
+        <a href="/fi/products.html#window">Ikkunamalliset paneelit</a>
+        <a href="/fi/products.html#smart">Älykäs ohjaus</a>
+        <a href="/fi/products.html#sizes">Kaikki koot ja hinnat</a>
+      </div>
+    </li>
+    <li><a>Käyttökohteet ▾</a>
+      <div class="nav-dropdown">
+        <a href="/fi/applications.html#offices">Toimistot ja työpaikat</a>
+        <a href="/fi/applications.html#healthcare">Terveydenhuolto ja klinikat</a>
+        <a href="/fi/applications.html#wellness">Wellness ja Spa</a>
+        <a href="/fi/applications.html#hospitality">Hotellit</a>
+        <a href="/fi/applications.html#residential">Asunnot</a>
+        <a href="/fi/applications.html#education">Koulutus</a>
+      </div>
+    </li>
+    <li><a href="/fi/science.html">Tiede</a></li>
+    <li><a>Meistä ▾</a>
+      <div class="nav-dropdown">
+        <a href="/fi/about.html">Yritysprofiili</a>
+        <a href="/fi/about.html#why-us">Miksi valita YUERSky</a>
+      </div>
+    </li>
+    <li><a href="/fi/contact.html#faq">UKK</a></li>
+    <li><a href="/fi/contact.html">Yhteystiedot</a></li>
+  </ul>
+  <div class="lang-switcher"><a href="/contact.html">EN</a><a href="/fi/contact.html" class="active">FI</a><a href="/sv/contact.html">SV</a></div>
+  <a href="/fi/contact.html" class="nav-cta">Aloita tästä →</a>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-content">
+    <div class="label">✦ Vastaus 24 tunnin sisällä</div>
+    <h1>Ota yhteyttä</h1>
+    <p>B2B-kyselyt, projektisuunnitelmat, CE-dokumenttipyynnöt ja hintakyselyt – vastaamme arkisin yhden työpäivän kuluessa.</p>
+  </div>
+</div>
+
+<!-- YHTEYSTIETOLOMAKE -->
+<section>
+  <div class="container">
+    <div class="contact-grid">
+      <div>
+        <div class="section-label">Lähetä tiedustelu</div>
+        <h2 style="font-size:1.5rem;margin-bottom:28px;">Kerro projektistasi</h2>
+        <form class="contact-form" action="https://formspree.io/f/mlgonzaz" method="POST">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+            <div>
+              <label for="name">Nimesi</label>
+              <input type="text" id="name" name="name" placeholder="Matti Virtanen" required/>
+            </div>
+            <div>
+              <label for="company">Yritys</label>
+              <input type="text" id="company" name="company" placeholder="Arkkitehtitoimisto Oy"/>
+            </div>
+          </div>
+          <label for="email">Sähköpostiosoite</label>
+          <input type="email" id="email" name="email" placeholder="sinun@yritys.fi" required/>
+          <label for="country">Maa</label>
+          <select id="country" name="country">
+            <option value="">Valitse maa</option>
+            <option>Suomi</option>
+            <option>Ruotsi</option>
+            <option>Norja</option>
+            <option>Tanska</option>
+            <option>Muu Pohjoismaa / Baltia</option>
+          </select>
+          <label for="enquiry">Tiedustelun tyyppi</label>
+          <select id="enquiry" name="enquiry_type">
+            <option value="">Valitse tyyppi</option>
+            <option>Projektisuunnittelu ja hinnoittelu</option>
+            <option>CE-dokumenttipyyntö</option>
+            <option>Näytepyyntö</option>
+            <option>Tekninen kysymys</option>
+            <option>Tukkumyynti / Volyymihinnoittelu</option>
+            <option>Muu</option>
+          </select>
+          <label for="message">Projektin tiedot</label>
+          <textarea id="message" name="message" placeholder="Kuvaile projektiasi – tilan tyyppi, huoneen koko, tarvittava määrä, ohjausjärjestelmä, aikataulu..."></textarea>
+          <input type="hidden" name="_subject" value="YUERSky B2B Enquiry"/>
+          <input type="hidden" name="_redirect" value="https://yuerskylight.fi/fi/contact.html?sent=1"/>
+          <button type="submit">Lähetä tiedustelu →</button>
+        </form>
+        <p style="font-size:0.78rem;color:var(--muted);margin-top:12px;text-align:center;">Kunnioitamme yksityisyyttäsi. Yhteystietojasi käytetään vain tiedusteluusi vastaamiseen.</p>
+      </div>
+      <div>
+        <div class="contact-info-card">
+          <h3>Suora yhteys</h3>
+          <div class="contact-info-item">
+            <div class="icon">📧</div>
+            <div>
+              <strong>Sähköposti</strong>
+              <p><a href="mailto:jiuxin@yuerskylight.fi" style="color:var(--sky);">jiuxin@yuerskylight.fi</a><br/>B2B-tiedustelut · Projektitiedot · CE-dokumentit</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="icon">⏰</div>
+            <div>
+              <strong>Vastausaika</strong>
+              <p>24 tunnin sisällä arkisin (Ma–Pe, 09:00–17:00 Helsinki)</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="icon">🚚</div>
+            <div>
+              <strong>Toimitus</strong>
+              <p>7 päivää 1–2 yksikölle · 10–15 päivää tukkutilauksille<br/>Suomi, Ruotsi, Norja, Tanska</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="icon">📦</div>
+            <div>
+              <strong>Minimitilaus</strong>
+              <p>2 yksikköä. Volyymihinnoittelu saatavilla yli 5 yksikölle – pyydä tarjous.</p>
+            </div>
+          </div>
+          <div style="background:var(--white);border-radius:10px;padding:20px;margin-top:8px;">
+            <p style="font-size:0.85rem;font-weight:700;margin-bottom:10px;">Toimitamme:</p>
+            <ul style="font-size:0.83rem;color:var(--muted);padding-left:16px;line-height:2.1;">
+              <li>CE-vaatimustenmukaisuusvakuutuksen</li>
+              <li>RoHS-sertifikaatin</li>
+              <li>Tekniset tiedot (Data Sheets)</li>
+              <li>DALI-kytkentäkaaviot</li>
+              <li>Tuya-integrointioppaat</li>
+              <li>Asennusohjeet (EN)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section style="background:var(--light-bg);" id="faq">
+  <div class="container" style="max-width:800px;">
+    <div class="section-label">Usein kysytyt kysymykset</div>
+    <h2>Vastauksia yleisimpiin kysymyksiin</h2>
+    <div style="margin-top:40px;">
+
+      <div class="faq-item">
+        <div class="faq-question">Miten paneeli asennetaan — vaatiiko se rakenteellisia töitä? <span class="faq-arrow">▾</span></div>
+        <div class="faq-answer">Paneeli sopii standardiin kattoristikkoon (upotettu asennus) tai se voidaan asentaa pintaan mukana tulevalla kehyksellä. Rakenteellisia läpivientejä ei tarvita. Sähköliitäntä on 100–240V AC. Asennukseen tarvitaan valtuutettu sähköasentaja, mutta erikoistunutta valaistusurakoitsijaa ei tarvita.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Onko paneeleillanne CE-sertifikaatti? <span class="faq-arrow">▾</span></div>
+        <div class="faq-answer">Kyllä. Jokainen YUERSky-paneeli toimitetaan CE-vaatimustenmukaisuusvakuutuksella ja RoHS-sertifikaatilla. Voimme toimittaa nämä dokumentit pyynnöstä jo ennen ostopäätöstä, mikä on yleinen käytäntö B2B-projekteissa. Ota yhteyttä: jiuxin@yuerskylight.fi.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Kuinka kauan toimitus Suomeen ja muihin Pohjoismaihin kestää? <span class="faq-arrow">▾</span></div>
+        <div class="faq-answer">Pienet tilaukset (1–2 yksikköä) saapuvat noin 7 kalenteripäivässä. Suuret projektitilaukset (3+ yksikköä) vievät 10–15 päivää tilauksen vahvistamisesta. Kaikki lähetykset on seurattuja ja vakuutettuja. Toimitamme Suomeen, Ruotsiin, Norjaan ja Tanskaan.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Tukeeko paneeli jatkuvaa CCT-himmennystä 2700K – 6500K välillä? <span class="faq-arrow">▾</span></div>
+        <div class="faq-answer">Kyllä. Smart Series tukee jatkuvaa värilämpötilan säätöä 2700K ja 6500K välillä Tuya-sovelluksen, DALI:n tai 0-10V ohjauksen kautta. 24 tunnin automaattitila käy läpi koko alueen automaattisesti. Saatavilla on myös kiinteän värilämpötilan versioita (3000K, 4000K, 6500K).</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Mikä on takuu? <span class="faq-arrow">▾</span></div>
+        <div class="faq-answer">Kaikilla YUERSky-paneeleilla on 3 vuoden valmistajan takuu. Arvioitu käyttöikä on 50 000 tuntia — noin 25 vuotta 6 tunnin päivittäisellä käytöllä. Jos paneeli vikaantuu takuuaikana, järjestämme korvaavan tuotteen veloituksetta.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Onko jännite yhteensopiva Suomen ja EU:n kanssa? <span class="faq-arrow">▾</span></div>
+        <div class="faq-answer">Kyllä. Kaikki paneelit toimivat 100–240V AC jännitteellä, mikä on täysin yhteensopiva Suomen ja EU:n 230V standardin kanssa. Muuntajia tai sovittimia ei tarvita.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Voinko tilata näytteen ennen suurempaa projektitilausta? <span class="faq-arrow">▾</span></div>
+        <div class="faq-answer">Kyllä. Minimitilausmäärä on 2 yksikköä, mikä mahdollistaa näytteen asennuksen showroomiin tai asiakasliikkeeseen ennen koko projektin tilaamista. Näytehinnoittelu on sama kuin standardihinta.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Minkä kokoisiin huoneisiin paneelit sopivat? <span class="faq-arrow">▾</span></div>
+        <div class="faq-answer">Yleisohjeena: 300×300mm (30W) enintään 2 m²; 600×300mm (48W) 3–4 m²; 600×600mm (60W) 6–8 m²; 300×1200mm (72W) 6–8 m²; 600×1200mm (100W) 10–15 m². Suurempiin tiloihin asennetaan useita paneeleja ristikkoon. Ota yhteyttä layout-suositusta varten.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Kuinka realistiselta taivasvaikutus näyttää aidossa asennuksessa? <span class="faq-arrow">▾</span></div>
+        <div class="faq-answer">Visuaalinen vaikutus on erittäin vakuuttava, kun se asennetaan upotettuna kattoon. Taivaskuva on painettu tai upotettu PMMA-kerrokseen, mikä luo syvyyttä ja realismia. Katso asennusvideomme Tuotteet-sivulta nähdäksesi tulokset käytännössä. Psykologinen hyöty – päivänvalon tunne – on tehokas, vaikka ymmärrettäisiinkin, että kyseessä on keinotekoinen valo.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Tarjoatteko tukkuhintoja suurille projekteille? <span class="faq-arrow">▾</span></div>
+        <div class="faq-answer">Kyllä. Yli 5 paneelin tilauksille tai jatkuville projektisuhteille tarjoamme tukkuhinnat. Ota yhteyttä projektitietojen ja määrätarpeiden kanssa pyytääksesi tarjouksen. Tuemme myös suunnittelijoita ja arkkitehteja dokumentaatiossa.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section style="background:linear-gradient(135deg,#0d1b3e,#2c6ea6);text-align:center;padding:80px 24px;">
+  <div class="section-label" style="color:var(--gold);">Vieläkö sinulla on kysyttävää?</div>
+  <h2 style="color:#fff;margin-bottom:14px;">Olemme täällä auttamassa</h2>
+  <p style="color:rgba(255,255,255,0.8);max-width:500px;margin:0 auto 32px;">Lähetä kysymyksesi suoraan meille – ei automaattivastauksia, ei puhelinkeskuksia. Vastaamme yhden työpäivän kuluessa.</p>
+  <a href="mailto:jiuxin@yuerskylight.fi" class="btn-primary" style="background:var(--gold);color:#0d1b3e;">jiuxin@yuerskylight.fi →</a>
+</section>
+
+<footer>
+  <div class="footer-links">
+    <a href="/fi/index.html">Etusivu</a>
+    <a href="/fi/products.html">Tuotteet</a>
+    <a href="/fi/applications.html">Käyttökohteet</a>
+    <a href="/fi/science.html">Tiede</a>
+    <a href="/fi/about.html">Meistä</a>
+    <a href="/fi/contact.html">Yhteystiedot ja UKK</a>
+  </div>
+  <p>© 2026 YUERSky · <a href="mailto:jiuxin@yuerskylight.fi">jiuxin@yuerskylight.fi</a></p>
+  <p style="margin-top:6px;font-size:0.75rem;">Pohjoismainen keinotekoisen taivasvalon suunnittelustudio · CE + RoHS sertifioitu</p>
+</footer>
+
+<script>
+  document.querySelectorAll('.nav-links > li').forEach(function(li) {
+    var toggle = li.querySelector('a');
+    var dropdown = li.querySelector('.nav-dropdown');
+    if (!dropdown) return;
+    toggle.addEventListener('click', function(e) {
+      e.preventDefault();
+      var isOpen = dropdown.classList.contains('open');
+      document.querySelectorAll('.nav-dropdown').forEach(function(d) { d.classList.remove('open'); });
+      if (!isOpen) dropdown.classList.add('open');
+    });
+  });
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest('.nav-links')) {
+      document.querySelectorAll('.nav-dropdown').forEach(function(d) { d.classList.remove('open'); });
+    }
+  });
+  // FAQ accordion
+  document.querySelectorAll('.faq-question').forEach(function(q) {
+    q.addEventListener('click', function() {
+      var item = this.closest('.faq-item');
+      var isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(function(i) { i.classList.remove('open'); });
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+  // Thank you message
+  if (window.location.search.includes('sent=1')) {
+    var form = document.querySelector('.contact-form');
+    if (form) {
+      form.innerHTML = '<div style="text-align:center;padding:40px;"><div style="font-size:3rem;margin-bottom:16px;">✅</div><h3 style="font-size:1.2rem;margin-bottom:10px;">Kiitos tiedustelustasi!</h3><p style="color:var(--muted);">Vastaamme yhden työpäivän kuluessa osoitteeseen ' + (new URLSearchParams(window.location.search).get('email') || 'sähköpostiosoitteeseesi') + '.</p></div>';
+    }
+  }
+</script>
+</body>
+</html>
