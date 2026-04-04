@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kontakt och FAQ — YUERSky konstgjort takfönster Norden</title>
+  <meta name="description" content="Kontakta YUERSky för priser på konstgjorda takfönster, CE-dokumentation och B2B-projekt i Sverige. Svar inom 24 timmar. FAQ: installation, garanti, DALI, frakt."/>
+  <meta name="keywords" content="kontakt konstgjort takfönster Sverige, köp LED takfönster panel, offert konstgjort takfönster, CE-certifikat LED takfönster, DALI takfönster förfrågan"/>
+  <link rel="canonical" href="https://yuerskylight.fi/sv/contact.html"/>
+  <link rel="alternate" hreflang="sv" href="https://yuerskylight.fi/sv/contact.html"/>
+  <link rel="alternate" hreflang="en" href="https://yuerskylight.fi/contact.html"/>
+  <link rel="alternate" hreflang="fi" href="https://yuerskylight.fi/fi/contact.html"/>
+  <link rel="alternate" hreflang="x-default" href="https://yuerskylight.fi/contact.html"/>
+
+  <meta property="og:title" content="Kontakt och FAQ — YUERSky konstgjort takfönster Norden"/>
+  <meta property="og:description" content="B2B-förfrågningar för konstgjorda takfönster i Sverige. CE-dok, projektpriser, DALI-specifikationer. Svar inom 24 timmar."/>
+  <meta property="og:url" content="https://yuerskylight.fi/sv/contact.html"/>
+  <meta property="og:image" content="https://sc02.alicdn.com/kf/A37a4a23e552c4574aacbc18a96042d0cK.png"/>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type":"Question","name":"Hur installeras panelen — krävs det byggtekniska ingrepp?","acceptedAnswer":{"@type":"Answer","text":"Panelen passar i ett standardundertak (infällt montage) eller kan monteras utanpåliggande. Elanslutning sker till 100–240V AC. Inga ingrepp i bärande konstruktion behövs."}},
+      {"@type":"Question","name":"Kommer panelerna med CE-certifikat?","acceptedAnswer":{"@type":"Answer","text":"Ja. Varje panel levereras med en CE-försäkran om överensstämmelse och RoHS-certifikat. Dokumenten finns tillgängliga på begäran."}},
+      {"@type":"Question","name":"Hur lång tid tar frakten till Sverige?","acceptedAnswer":{"@type":"Answer","text":"1–2 enheter: cirka 7 dagar. Större order: 10–15 dagar. Vi skickar till Sverige, Finland, Norge och Danmark."}},
+      {"@type":"Question","name":"Vad är garantin?","acceptedAnswer":{"@type":"Answer","text":"3 års tillverkargaranti. Panelens livslängd är 50 000 timmar (cirka 25 år vid 6 timmars användning per dag)."}}
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="../shared.css"/>
+  <style>
+    .contact-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 60px; align-items: start; margin-top: 48px; }
+    .contact-form label { display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 6px; }
+    .contact-form input, .contact-form textarea, .contact-form select {
+      width: 100%; padding: 11px 14px; border: 1.5px solid var(--border); border-radius: 8px;
+      font-size: 0.9rem; font-family: inherit; background: var(--white);
+      color: var(--text); margin-bottom: 18px; transition: border-color 0.2s;
+    }
+    .contact-form input:focus, .contact-form textarea:focus, .contact-form select:focus {
+      outline: none; border-color: var(--sky);
+    }
+    .contact-form textarea { height: 120px; resize: vertical; }
+    .contact-form button {
+      width: 100%; padding: 14px; background: var(--sky); color: var(--white);
+      border: none; border-radius: 50px; font-size: 1rem; font-weight: 700;
+      cursor: pointer; transition: background 0.2s;
+    }
+    .contact-form button:hover { background: var(--sky-dark); }
+    .contact-info-card { background: var(--light-bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 32px; }
+    .contact-info-card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 20px; }
+    .contact-info-item { display: flex; gap: 14px; align-items: flex-start; margin-bottom: 20px; }
+    .contact-info-item .icon { font-size: 1.4rem; flex-shrink: 0; margin-top: 2px; }
+    .contact-info-item p { font-size: 0.88rem; color: var(--muted); line-height: 1.6; }
+    .contact-info-item strong { display: block; font-weight: 700; color: var(--text); margin-bottom: 3px; }
+    .faq-item { border-bottom: 1px solid var(--border); }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-question {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 20px 0; cursor: pointer; font-weight: 600; font-size: 0.95rem;
+      transition: color 0.2s; gap: 16px;
+    }
+    .faq-question:hover { color: var(--sky); }
+    .faq-question .faq-arrow { font-size: 1.2rem; transition: transform 0.2s; flex-shrink: 0; }
+    .faq-answer { padding-bottom: 20px; font-size: 0.88rem; color: var(--muted); line-height: 1.75; display: none; }
+    .faq-item.open .faq-answer { display: block; }
+    .faq-item.open .faq-arrow { transform: rotate(180deg); }
+    @media (max-width: 768px) {
+      .contact-grid { grid-template-columns: 1fr; }
+    }
+    .lang-switcher{display:flex;gap:6px;align-items:center;font-size:0.8rem}
+    .lang-switcher a{padding:4px 10px;border-radius:50px;text-decoration:none;font-weight:600;border:1.5px solid #e0e8f0;color:#555;transition:all 0.2s}
+    .lang-switcher a.active{background:#4A90D9;color:#fff;border-color:#4A90D9}
+  </style>
+</head>
+<body>
+
+<div class="top-bar">
+  <span>📧 <a href="mailto:jiuxin@yuerskylight.fi">jiuxin@yuerskylight.fi</a></span>
+  <span>⏰ Mån–Fre 09:00–17:00 Helsingfors</span>
+  <span>🚚 Leverans till Norden på 7–15 dagar</span>
+</div>
+
+<nav>
+  <a href="/sv/" class="nav-logo">YUER<span>Sky</span></a>
+  <ul class="nav-links">
+    <li><a>Produkter ▾</a>
+      <div class="nav-dropdown">
+        <a href="/sv/products.html">Takpaneler</a>
+        <a href="/sv/products.html#window">Fönsterpaneler</a>
+        <a href="/sv/products.html#smart">Smart styrning</a>
+        <a href="/sv/products.html#sizes">Alla storlekar & priser</a>
+      </div>
+    </li>
+    <li><a>Användningsområden ▾</a>
+      <div class="nav-dropdown">
+        <a href="/sv/applications.html#offices">Kontor & arbetsplatser</a>
+        <a href="/sv/applications.html#healthcare">Vård & kliniker</a>
+        <a href="/sv/applications.html#wellness">Wellness & spa</a>
+        <a href="/sv/applications.html#hospitality">Hotell & restaurang</a>
+        <a href="/sv/applications.html#residential">Hem & fritid</a>
+        <a href="/sv/applications.html#education">Skola & utbildning</a>
+      </div>
+    </li>
+    <li><a href="/sv/science.html">Vetenskap</a></li>
+    <li><a>Om oss ▾</a>
+      <div class="nav-dropdown">
+        <a href="/sv/about.html">Företagsprofil</a>
+        <a href="/sv/about.html#why-us">Varför välja YUERSky</a>
+      </div>
+    </li>
+    <li><a href="/sv/contact.html#faq">FAQ</a></li>
+    <li><a href="/sv/contact.html">Kontakt</a></li>
+    <li>
+      <div class="lang-switcher">
+        <a href="/contact.html">EN</a>
+        <a href="/fi/contact.html">FI</a>
+        <a href="/sv/contact.html" class="active">SV</a>
+      </div>
+    </li>
+  </ul>
+  <a href="/sv/contact.html" class="nav-cta">Kom igång →</a>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-content">
+    <div class="label">✦ Svar inom 24 timmar</div>
+    <h1>Kontakta oss</h1>
+    <p>B2B-förfrågningar, projektspecifikationer, begäran om CE-dokumentation och prisfrågor — vi svarar inom en arbetsdag.</p>
+  </div>
+</div>
+
+<!-- CONTACT FORM -->
+<section>
+  <div class="container">
+    <div class="contact-grid">
+      <div>
+        <div class="section-label">Skicka en förfrågan</div>
+        <h2 style="font-size:1.5rem;margin-bottom:28px;">Berätta om ditt projekt</h2>
+        <form class="contact-form" action="https://formspree.io/f/mlgonzaz" method="POST">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+            <div>
+              <label for="name">Ditt namn</label>
+              <input type="text" id="name" name="name" placeholder="Matti Virtanen" required/>
+            </div>
+            <div>
+              <label for="company">Företag</label>
+              <input type="text" id="company" name="company" placeholder="Arkkitehtitoimisto Oy"/>
+            </div>
+          </div>
+          <label for="email">E-postadress</label>
+          <input type="email" id="email" name="email" placeholder="namn@foretag.se" required/>
+          <label for="country">Land</label>
+          <select id="country" name="country">
+            <option value="">Välj land</option>
+            <option>Sverige</option>
+            <option>Finland</option>
+            <option>Norge</option>
+            <option>Danmark</option>
+            <option>Övriga Norden / Baltikum</option>
+          </select>
+          <label for="enquiry">Typ av ärende</label>
+          <select id="enquiry" name="enquiry_type">
+            <option value="">Välj typ</option>
+            <option>Projektspecifikation & pris</option>
+            <option>Begäran om CE-dokumentation</option>
+            <option>Begäran om varuprov</option>
+            <option>Teknisk fråga</option>
+            <option>Grossist- / volympris</option>
+            <option>Övrigt</option>
+          </select>
+          <label for="message">Projektinformation</label>
+          <textarea id="message" name="message" placeholder="Beskriv ditt projekt — typ av utrymme, rumsstorlek, antal som behövs, styrsystem, tidsplan..."></textarea>
+          <input type="hidden" name="_subject" value="YUERSky B2B Enquiry (SV)"/>
+          <input type="hidden" name="_redirect" value="https://yuerskylight.fi/sv/contact.html?sent=1"/>
+          <button type="submit">Skicka förfrågan →</button>
+        </form>
+        <p style="font-size:0.78rem;color:var(--muted);margin-top:12px;text-align:center;">Vi respekterar din integritet. Dina kontaktuppgifter används endast för att svara på din förfrågan.</p>
+      </div>
+      <div>
+        <div class="contact-info-card">
+          <h3>Direktkontakt</h3>
+          <div class="contact-info-item">
+            <div class="icon">📧</div>
+            <div>
+              <strong>E-post</strong>
+              <p><a href="mailto:jiuxin@yuerskylight.fi" style="color:var(--sky);">jiuxin@yuerskylight.fi</a><br/>B2B-förfrågningar · Projektspecifikationer · CE-dok</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="icon">⏰</div>
+            <div>
+              <strong>Svarstid</strong>
+              <p>Inom 24 timmar på arbetsdagar (Mån–Fre, 09:00–17:00 Helsingforstid)</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="icon">🚚</div>
+            <div>
+              <strong>Frakt</strong>
+              <p>7 dagar för 1–2 enheter · 10–15 dagar för större order<br/>Sverige, Finland, Norge, Danmark</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="icon">📦</div>
+            <div>
+              <strong>Minsta beställning</strong>
+              <p>2 enheter. Volympriser tillgängliga för 5+ enheter — be oss om en projektoffert.</p>
+            </div>
+          </div>
+          <div style="background:var(--white);border-radius:10px;padding:20px;margin-top:8px;">
+            <p style="font-size:0.85rem;font-weight:700;margin-bottom:10px;">Vi tillhandahåller:</p>
+            <ul style="font-size:0.83rem;color:var(--muted);padding-left:16px;line-height:2.1;">
+              <li>CE-försäkran om överensstämmelse</li>
+              <li>RoHS-certifikat</li>
+              <li>Tekniska datablad</li>
+              <li>DALI-kopplingsscheman</li>
+              <li>Tuya-integrationsguider</li>
+              <li>Installationsanvisningar (EN)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section style="background:var(--light-bg);" id="faq">
+  <div class="container" style="max-width:800px;">
+    <div class="section-label">Vanliga frågor (FAQ)</div>
+    <h2>Svar på vanliga frågor</h2>
+    <div style="margin-top:40px;">
+
+      <div class="faq-item">
+        <div class="faq-question">Hur installeras panelen — krävs det byggtekniska ingrepp? <span class="faq-arrow">▾</span></div>
+        <div class="faq-answer">Panelen passar i ett standardundertak (infällt montage) eller kan monteras utanpåliggande med den medföljande ramen. Inga ingrepp i bärande konstruktion behövs. Elanslutning sker till 100–240V AC via en standard-driver. En behörig elektriker krävs för anslutning, men ingen specialiserad belysningsentreprenör behövs.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Kommer panelerna med CE-certifikat? <span class="faq-arrow">▾</span></div>
+        <div class="faq-answer">Ja. Varje YUERSky-panel levereras med en CE-försäkran om överensstämmelse och RoHS-certifikat. Vi kan tillhandahålla dessa dokument på begäran före köp, vilket är standard för B2B-projekt. Kontakta oss på jiuxin@yuerskylight.fi.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Hur lång tid tar frakten till Sverige och övriga Norden? <span class="faq-arrow">▾</span></div>
+        <div class="faq-answer">Varuprov och småorder (1–2 enheter) anländer på cirka 7 kalenderdagar. Större projektorder (3+ enheter) tar 10–15 dagar från orderbekräftelse. Alla försändelser är spårbara och försäkrade. Vi skickar till Sverige, Finland, Norge och Danmark.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Stödjer panelen steglös CCT-dimring från 2700K till 6500K? <span class="faq-arrow">▾</span></div>
+        <div class="faq-answer">Ja. Smart-serien stödjer steglös CCT-justering mellan 2700K och 6500K via Tuya-appen, DALI eller 0-10V-styrning. Det automatiska 24-timmarsläget går igenom hela intervallet automatiskt. Versioner med fast CCT (3000K, 4000K, 6500K) finns också tillgängliga för projekt som kräver en specifik färgtemperatur.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Vad är garantin? <span class="faq-arrow">▾</span></div>
+        <div class="faq-answer">Alla YUERSky-paneler har 3 års tillverkargaranti mot defekter. Den beräknade livslängden är 50 000 timmar — cirka 25 år vid 6 timmars användning per dag. Om en panel går sönder under garantiperioden ordnar vi ett kostnadsfritt byte.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Är spänningen kompatibel med Sverige och EU? <span class="faq-arrow">▾</span></div>
+        <div class="faq-answer">Ja. Alla paneler drivs med 100–240V AC, vilket är fullt kompatibelt med svensk och europeisk standard på 230V. Ingen spänningstransformator eller adapter behövs.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Kan jag beställa ett varuprov innan jag bestämmer mig för en större mängd? <span class="faq-arrow">▾</span></div>
+        <div class="faq-answer">Ja. Minsta beställningsmängd är 2 enheter, vilket gör det möjligt att installera ett prov i din utställning eller hos kund innan en hel projektorder läggs. Priset för varuprov är detsamma som standardpriset. Kontakta oss för att diskutera dina behov.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Vilka rumsstorlekar passar panelerna för? <span class="faq-arrow">▾</span></div>
+        <div class="faq-answer">Som en generell guide: 300×300mm (30W) för upp till 2 m²; 600×300mm (48W) för 3–4 m²; 600×600mm (60W) för 6–8 m²; 300×1200mm (72W) för 6–8 m²; 600×1200mm (100W) för 10–15 m². För större utrymmen installeras flera paneler i ett rutnät. Kontakta oss för en layoutrekommendation för ditt specifika projekt.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Hur realistisk ser himmelseffekten ut i en riktig installation? <span class="faq-arrow">▾</span></div>
+        <div class="faq-answer">Den visuella effekten är mycket övertygande när den monteras infällt i taket med lämplig inramning. Himmelsbilden är tryckt eller inbäddad i diffusörlagret, vilket skapar djup och realism. Se våra installationsvideor på produktsidan för att se verkliga resultat. Den psykologiska fördelen — känslan av dagsljus ovanifrån — är effektiv även när man vet att takfönstret är konstgjort.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Erbjuder ni volymrabatter för stora projekt? <span class="faq-arrow">▾</span></div>
+        <div class="faq-answer">Ja. För order på 5 eller fler paneler, eller för löpande projektleveranser, erbjuder vi grossistpriser. Kontakta oss med dina projektdetaljer och antal för en anpassad offert. Vi stöttar även inredningsarkitekter och arkitekter med dokumentation och kan lagerhålla produkter för etappvisa leveranser.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section style="background:linear-gradient(135deg,#0d1b3e,#2c6ea6);text-align:center;padding:80px 24px;">
+  <div class="section-label" style="color:var(--gold);">Har du fortfarande frågor?</div>
+  <h2 style="color:#fff;margin-bottom:14px;">Vi är här för att hjälpa dig</h2>
+  <p style="color:rgba(255,255,255,0.8);max-width:500px;margin:0 auto 32px;">Skicka din fråga direkt till oss — inga automatiserade svar eller callcenters. Vi svarar inom en arbetsdag.</p>
+  <a href="mailto:jiuxin@yuerskylight.fi" class="btn-primary" style="background:var(--gold);color:#0d1b3e;">jiuxin@yuerskylight.fi →</a>
+</section>
+
+<footer>
+  <div class="footer-links">
+    <a href="/sv/">Hem</a>
+    <a href="/sv/products.html">Produkter</a>
+    <a href="/sv/applications.html">Användningsområden</a>
+    <a href="/sv/science.html">Vetenskap</a>
+    <a href="/sv/about.html">Om oss</a>
+    <a href="/sv/contact.html">Kontakt & FAQ</a>
+  </div>
+  <p>© 2026 YUERSky · <a href="mailto:jiuxin@yuerskylight.fi">jiuxin@yuerskylight.fi</a></p>
+  <p style="margin-top:6px;font-size:0.75rem;">Nordisk studio för konstgjorda takfönster · CE + RoHS-certifierad</p>
+</footer>
+
+<script>
+  document.querySelectorAll('.nav-links > li').forEach(function(li) {
+    var toggle = li.querySelector('a');
+    var dropdown = li.querySelector('.nav-dropdown');
+    if (!dropdown) return;
+    toggle.addEventListener('click', function(e) {
+      if (e.target.tagName === 'A' && e.target.getAttribute('href')) return;
+      e.preventDefault();
+      var isOpen = dropdown.classList.contains('open');
+      document.querySelectorAll('.nav-dropdown').forEach(function(d) { d.classList.remove('open'); });
+      if (!isOpen) dropdown.classList.add('open');
+    });
+  });
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest('.nav-links')) {
+      document.querySelectorAll('.nav-dropdown').forEach(function(d) { d.classList.remove('open'); });
+    }
+  });
+  // FAQ accordion
+  document.querySelectorAll('.faq-question').forEach(function(q) {
+    q.addEventListener('click', function() {
+      var item = this.closest('.faq-item');
+      var isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(function(i) { i.classList.remove('open'); });
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+  // Thank you message
+  if (window.location.search.includes('sent=1')) {
+    var form = document.querySelector('.contact-form');
+    if (form) {
+      form.innerHTML = '<div style="text-align:center;padding:40px;"><div style="font-size:3rem;margin-bottom:16px;">✅</div><h3 style="font-size:1.2rem;margin-bottom:10px;">Tack för din förfrågan!</h3><p style="color:var(--muted);">Vi svarar inom en arbetsdag till ' + (new URLSearchParams(window.location.search).get('email') || 'din e-postadress') + '.</p></div>';
+    }
+  }
+</script>
+</body>
+</html>
